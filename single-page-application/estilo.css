@@ -1,0 +1,38 @@
+.blueButton{
+    background-color: #4169E1;
+}
+.greenButton{
+    background-color: #7FFF00
+}
+.yellowButton{
+    background-color:#FFD700;
+}
+.window{
+   width: 40px;
+   height: 40px;
+   margin:10px;
+   box-shadow: 2px 2px #313036;
+   border-radius: 9px;
+   border-color: #3b3a41;
+}
+.barra{
+   width: 40px;
+   height: 40px;
+   margin:10px;
+   box-shadow: 2px 2px #313036;
+   border-radius: 9px;
+   border-color: #3b3a41;
+   background-color:#FF0000;
+}
+.numberButton{
+   color: white;
+   font-weight: bold;
+   font-family: arial;
+   font-size: 150%;
+   box-shadow: 2px 2px #313036;
+   width: 40px;
+   height: 40px;
+   margin: 5px;
+   border-radius: 9px;
+   border-color: #3b3a41;
+}
