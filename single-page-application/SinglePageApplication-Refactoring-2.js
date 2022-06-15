@@ -1,3 +1,7 @@
+/* Muy bien Sofi. Esto está perfecto.
+Toda esta lógica habría que pasarla en el refactoring
+siguiente a diseño basado en clases.
+Seguro que está en proceso.*/
 
 function posicionarElementoEnTabla( tablaObj, nroFila, nroColumna, elemento )
 {
@@ -159,7 +163,10 @@ function alHacerClickEnBotonDecimal()
 {
     display.value += ".";
 }
-function alHacerClickEnBotonIgual(){
+function alHacerClickEnBotonIgual()
+{
+    //Acá no concatena el =, sino que pone el resultado del calculo de la
+    //expresión del display
     display.value += "=";
 }
 //Asignar las reacciones
