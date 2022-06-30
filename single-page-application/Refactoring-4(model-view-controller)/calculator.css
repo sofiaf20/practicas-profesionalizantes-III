@@ -1,0 +1,68 @@
+.tabla{
+    width: 20%;
+    height: 85%;
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top:1%;
+}
+.box{
+    width: 18%;
+    margin-left: 41%;
+    margin-right: 40%;
+    margin-top: 5%;
+    border-radius: 9px;
+    border-color: #3b3a41;
+    background-color:#5b5a63;
+    color:#ffffff;
+}
+.blueButton{
+    background-color: #4169E1;
+}
+.blueButton:hover{
+    background-color: #0f2770;
+}
+.greenButton{
+    background-color: #7FFF00
+}
+.greenButton:hover{
+    background-color: #019c01
+}
+.yellowButton{
+    background-color:#FFD700;
+}
+.yellowButton:hover{
+    background-color:#ffa600;
+}
+.deleteButton{
+   background-color:#FF0000;
+   color: white;
+   font-weight: bold;
+   font-family: arial;
+   font-size: 150%;
+   box-shadow: 2px 2px #313036;
+   width: 95%;
+   margin: 5px;
+   margin-left: 7px;
+   border-radius: 9px;
+   border-color: #3b3a41;
+}
+.deleteButton:hover{
+   background-color:#a80202;
+}
+.inputBox{
+   width: 20%;
+   margin-left: 20%;
+   color:#ffffff;
+}
+.numberButton{
+   color: white;
+   font-weight: bold;
+   font-family: arial;
+   font-size: 150%;
+   box-shadow: 2px 2px #313036;
+   width: 40px;
+   height: 40px;
+   margin-left:10%;
+   border-radius: 9px;
+   border-color: #3b3a41;
+}

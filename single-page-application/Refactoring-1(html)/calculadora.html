@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset ="utf-8">
+        <title>Calculadora</title>
+        <link rel= "stylesheet" type="text/css" href="calculadora.css">
+    </head>
+    <body>
+        <div id="canvas" class="box">
+        <input id="inputWindow" class="inputBox" type="text" value="" disabled></input>
+        <table>
+        <tr>
+           <td>
+              <button id="button7" class="blueButton numberButton"> 7 </button> 
+           </td>
+           <td>
+            <button id="button8" class="blueButton numberButton"> 8 </button> 
+           </td>
+           <td>
+            <button id="button9" class="blueButton numberButton"> 9 </button> 
+           </td>
+           <td>
+            <button id="buttonPlus" class="greenButton numberButton"> + </button>
+           </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="button4" class="blueButton numberButton">4</button>
+            </td>
+            <td>
+                <button id="button5" class="blueButton numberButton">5</button>
+            </td>
+            <td>
+                <button id="button6" class="blueButton numberButton">6</button>
+            </td>
+            <td>
+                <button id="buttonMinus" class="greenButton numberButton">-</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="button3" class="blueButton numberButton">3</button>
+            </td>
+            <td>
+                <button id="button2" class="blueButton numberButton">2</button>
+            </td>
+            <td>
+                <button id="button1" class="blueButton numberButton">1</button>
+            </td>
+            <td>
+                <button id="buttonMulti" class="greenButton numberButton">*</button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <button id="button0" class="blueButton numberButton">0</button>
+            </td>
+            <td>
+                <button id="buttonDeci" class="blueButton numberButton">.</button>
+            </td>
+            <td>
+                <button id="buttonEqual" class="yellowButton numberButton">=</button>
+            </td>
+            <td>
+                <button id="buttonDivi" class="greenButton numberButton">/</button>
+            </td>
+        </tr>
+        </table>
+        <button id="deleteButton" class="delete">Borrar</button>
+        </div>
+      </body>
+      <script type="text/javascript">
+
+        let display = document.getElementById("inputWindow");
+    
+        let button0 = document.getElementById("button0");
+        function alHacerClickBoton0(){
+            let display = document.getElementById("inputWindow");
+            display.value += "0";
+        }
+        button0.addEventListener("click", alHacerClickBoton0);
+
+        let button1 = document.getElementById("button1");
+        function alHacerClickBoton1(){
+            let display = document.getElementById("inputWindow");
+            display.value += "1";
+        }
+        button1.addEventListener("click", alHacerClickBoton1);
+
+        let button2 = document.getElementById("button2");
+        function alHacerClickBoton2(){
+            let display = document.getElementById("inputWindow");
+            display.value += "2";
+        }
+        button2.addEventListener("click", alHacerClickBoton2);
+
+        let button3 = document.getElementById("button3");
+        function alHacerClickBoton3(){
+            let display = document.getElementById("inputWindow");
+            display.value += "3";
+        }
+        button3.addEventListener("click", alHacerClickBoton3);
+
+        let button4 = document.getElementById("button4");
+        function alHacerClickBoton4(){
+            let display = document.getElementById("inputWindow");
+            display.value += "4";
+        }
+        button4.addEventListener("click", alHacerClickBoton4);
+
+        let button5 = document.getElementById("button5");
+        function alHacerClickBoton5(){
+            let display = document.getElementById("inputWindow");
+            display.value += "5";
+        }
+        button5.addEventListener("click", alHacerClickBoton5);
+
+        let button6 = document.getElementById("button6");
+        function alHacerClickBoton6(){
+            let display = document.getElementById("inputWindow");
+            display.value += "6";
+        }
+        button6.addEventListener("click", alHacerClickBoton6);
+
+        let button7 = document.getElementById("button7");
+        function alHacerClickBoton7(){
+            let display = document.getElementById("inputWindow");
+            display.value += "7";
+        }
+        button7.addEventListener("click", alHacerClickBoton7);
+
+        let button8 = document.getElementById("button8");
+        function alHacerClickBoton8(){
+            let display = document.getElementById("inputWindow");
+            display.value += "8";
+        }
+        button8.addEventListener("click", alHacerClickBoton8);
+
+        let button9 = document.getElementById("button9");
+        function alHacerClickBoton9(){
+            let display = document.getElementById("inputWindow");
+            display.value += "9";
+        }
+        button9.addEventListener("click", alHacerClickBoton9);
+
+        let buttonPlus = document.getElementById("buttonPlus");
+        function alHacerClickBotonMas(){
+            let display = document.getElementById("inputWindow");
+            display.value += "+";
+        }
+        buttonPlus.addEventListener("click", alHacerClickBotonMas);
+
+        let buttonMinus = document.getElementById("buttonMinus");
+        function alHacerClickBotonMenos(){
+            let display = document.getElementById("inputWindow");
+            display.value += "-";
+        }
+        buttonMinus.addEventListener("click", alHacerClickBotonMenos);
+
+        let buttonMulti = document.getElementById("buttonMulti");
+        function alHacerClickBotonMulti(){
+            let display = document.getElementById("inputWindow");
+            display.value += "*";
+        }
+        buttonMulti.addEventListener("click", alHacerClickBotonMulti);
+
+        let buttonDivi = document.getElementById("buttonDivi");
+        function alHacerClickBotonDivi(){
+            let display = document.getElementById("inputWindow");
+            display.value += "/";
+        }
+        buttonDivi.addEventListener("click", alHacerClickBotonDivi);
+
+        let buttonDeci = document.getElementById("buttonDeci");
+        function alHacerClickBotonDeci(){
+            let display = document.getElementById("inputWindow");
+            display.value += ".";
+        }
+        buttonDeci.addEventListener("click", alHacerClickBotonDeci);
+
+        let buttonEqual = document.getElementById("buttonEqual");
+        function alHacerClickBotonIgual(){
+            let display = document.getElementById("inputWindow");
+            display.value = eval(display.value);
+        }
+        buttonEqual.addEventListener("click", alHacerClickBotonIgual);
+
+        let deleteButton = document.getElementById("deleteButton");
+        function alHacerClickBotonBorrar(){
+            let display = document.getElementById("inputWindow");
+            display.value = "";
+        }
+        deleteButton.addEventListener("click", alHacerClickBotonBorrar);
+
+        function calculate(expression){
+            return eval(expression);
+        }
+
+      </script>
+</html>
