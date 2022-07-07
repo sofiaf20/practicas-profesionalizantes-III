@@ -67,7 +67,7 @@ class CalculatorController
 	}
 	alHacerClickEnBotonIgual()
 	{
-    	this.innerView.display.value = this.innerModel.calculate(this.innerView.display.value);
+    	this.innerView.display.value = this.innerModel.calculate(this.innerView.display.value).then(response => this.innerView.display.value = response );
 	}
 	alHacerClickEnBotonBorrar()
 	{

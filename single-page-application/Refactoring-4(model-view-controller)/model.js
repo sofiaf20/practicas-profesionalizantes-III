@@ -1,4 +1,3 @@
-
 class CalculatorModel
 {
 	constructor()
@@ -12,3 +11,4 @@ class CalculatorModel
 	}
 }
 
+export {CalculatorModel};
